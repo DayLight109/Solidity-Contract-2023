@@ -2,7 +2,7 @@
 For 
 区块链 智能合约开发 Java
 
-#1 Step 1 区块链平台搭建
+#1 Step 1 区块链平台搭建相关经验 小技巧 
 
 搭建平台 我首推使用Docker容器搭建  全套套件采用Webase Fisco Bcos
 
@@ -10,7 +10,7 @@ For
 
 JDK版本推荐使用Oracle 官方版本 尽可能不要使用OpenJDK 降低错误率
 
-个人搭建时 使用的Ubuntu系统 22.10版本  JDK版本使用JDK8(随Docker自带) 
+个人搭建时 使用的Ubuntu系统 22.10版本  JDK版本使用JDK8(随Docker自带) (强烈推荐Ubuntu)
 
 尽量使用物理机搭建 可以大幅度减少性能损耗 物理机推荐在16C 64G内存左右(内存越大越好) 
 
@@ -20,7 +20,9 @@ JDK版本推荐使用Oracle 官方版本 尽可能不要使用OpenJDK 降低错�
 
 详细搭建方式请参考Fisco Bcos官方搭建手册 这里只描述易出错的点位
 
+套件推荐使用Webase v1.5.5 即可
 
+#2 问题解决
 Mysql Error(FIXED)
 
 解决方式:调整Mysql8.x权限方面问题,如无要求 尽量使用MYSQL5.x 
@@ -29,9 +31,7 @@ Mysql Error(FIXED)
 
 配置JDK 方法 
 
-vim /etc/environment
-
-下配置JAVAHOME即可 
+vim /etc/environment 下配置JAVAHOME即可 
 
 使用JAVA_SDK压测工具时 请尽量在ubuntu下使用Root账户复制证书
 
@@ -44,6 +44,6 @@ java -cp 'conf/:lib/*:apps/*' org.fisco.bcos.sdk.demo.perf.ParallelOkPerf [paral
 推荐压力在1K tps  100w 交易量 即可达到压测效果
 
 
-
+推
 
 
