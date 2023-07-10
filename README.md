@@ -31,4 +31,15 @@ Mysql Error(FIXED)
 
 vim /etc/environment
 
-下配置JAVAHOME即可
+下配置JAVAHOME即可 
+
+使用JAVA_SDK压测工具时 请尽量在ubuntu下使用Root账户复制证书
+
+在正常用户模式下复制可能会导致一些权限问题
+
+java -cp 'conf/:lib/*:apps/*' org.fisco.bcos.sdk.demo.perf.ParallelOkPerf [parallelok] [1] [1] [10000] [1000] [1]
+
+在以上命令中 请把压测数据外的大括号去掉 即可正常进行压力测试 
+
+
+
