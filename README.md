@@ -22,7 +22,13 @@ JDK版本推荐使用Oracle 官方版本 尽可能不要使用OpenJDK 降低错�
 
 
 Mysql Error(FIXED)
+
 解决方式:调整Mysql8.x权限方面问题,如无要求 尽量使用MYSQL5.x 
+
 ！！！请注意 在运行部署套件的时候 一定要配置JDK 一定！！！
+
 配置JDK 方法 
-vim /etc/profile/
+
+vim /etc/environment
+
+下配置JAVAHOME即可
