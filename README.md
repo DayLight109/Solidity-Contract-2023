@@ -41,5 +41,9 @@ java -cp 'conf/:lib/*:apps/*' org.fisco.bcos.sdk.demo.perf.ParallelOkPerf [paral
 
 在以上命令中 请把压测数据外的大括号去掉 即可正常进行压力测试 
 
+推荐压力在1K tps  100w 交易量 即可达到压测效果
+
+
+
 
 
